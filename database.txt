@@ -1,0 +1,16 @@
+create table account(
+	id int(11) auto_increment primary key not null,
+	username varchar(255) unique not null,
+    password varchar(255) not null,
+    lavel varchar(7)
+);
+
+
+create table profile(
+	id int(11) auto_increment primary key not null,
+	fullname varchar(255) not null,
+    depname varchar(255) not null,
+    gpa varchar(4) not null,
+    photo varchar(255) not null,
+    username varchar(255) unique not null
+);
